@@ -1,5 +1,6 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -12,17 +13,19 @@ body {
 header {
     background: #1f1f1f;
     color: #e0e0e0;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
     animation: slideDown 1s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 nav {
     background: #2c2c2c;
     color: #e0e0e0;
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: center;
     animation: slideDown 1s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 nav a {
@@ -69,6 +72,7 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
     animation: slideUp 1s ease-in-out;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
 }
 
 button {
