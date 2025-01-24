@@ -17,6 +17,7 @@
         <a href="#about">關於我</a>
         <a href="#interests">我的興趣</a>
         <a href="#contact">聯絡方式</a>
+        <a href="#discord-servers">Discord 伺服器</a>
     </nav>
 
     <section id="about">
@@ -47,10 +48,47 @@
     <section id="discord-servers">
         <h2>Discord 伺服器</h2>
         <p>歡迎加入我的 Discord 伺服器</p>
-        <ul>
-        <iframe src="https://discord.com/widget?id=1164181579191550055&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        <iframe src="https://discord.com/widget?id=1297496788449624125&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </ul>
+        <div class="discord-widgets"></div>
+            <iframe src="https://discord.com/widget?id=1164181579191550055&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            <iframe src="https://discord.com/widget?id=1297496788449624125&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
     </section>
+
+    <button id="back-to-top">返回頂部</button>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 返回頂部按鈕的功能
+        const backToTopButton = document.getElementById('back-to-top');
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // 當滾動超過一定距離時顯示按鈕
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
