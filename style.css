@@ -52,6 +52,16 @@ nav {
 
 /* 導航鏈接樣式 */
 nav a {
+    /* 內邊距設置 */
+    padding: 0.3cm;
+    /* 外邊距設置 */
+    margin: 1rem;
+    /* 背景顏色設置為深色 */
+    background: #1f1f1f46;
+    /* 圓角邊框 */
+    border-radius: 9px;
+    /* 陰影效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     /* 文字顏色設置為淺色 */
     color: #e0e0e0;
     /* 鏈接之間的間距 */
@@ -66,6 +76,7 @@ nav a {
 nav a:hover {
     /* 懸停時文字顏色變亮 */
     color: #b3b3b3;
+    animation: slideup 1s ease-in-out;
 }
 
 /* 聯繫鏈接樣式 */
