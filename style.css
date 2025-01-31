@@ -58,8 +58,6 @@ nav a {
     margin: 1rem;
     /* 背景顏色設置為深色 */
     background: #1f1f1f46;
-    /* 圓角邊框 */
-    border-radius: 9px;
     /* 陰影效果 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     /* 文字顏色設置為淺色 */
