@@ -8,26 +8,25 @@
     <link rel="icon" href="https://cdn.discordapp.com/avatars/871743426620706847/f366f4536eab088f763e3f1e9de8505c.webp?size=1024&width=480&height=480" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>歡迎來到 Ian 的網站</h1>
+    <header class="fade-in">
+        <h1 >歡迎來到 Ian 的網站</h1>
         <p>分享我的興趣與生活！</p>
     </header>
 
-    <nav>
+    <nav class="fade-in">
         <a href="#about">關於我</a>
         <a href="#interests">我的興趣</a>
         <a href="#contact">聯絡方式</a>
         <a href="#discord-servers">Discord 伺服器</a>
     </nav>
 
-    <section id="about">
+    <section id="about" class="fade-in">
         <h2>關於我</h2>
         <p>嗨，我是 Ian，一個14歲的台灣學生，我喜歡玩CODM、Minecraft、音遊，我常常在Discord活躍</p>
     </section>
 
-    <section id="interests">
+    <section id="interests" class="fade-in">
         <h2>我的興趣</h2>
-        <ul>
             <li><strong>CODM：</strong>分享遊戲中的成就。</li>
             <li><strong>Minecraft：</strong>建造與冒險的樂趣。</li>
             <li><strong>節奏遊戲：</strong>挑戰自我的高分與連擊。</li>
@@ -52,9 +51,14 @@
             <iframe src="https://discord.com/widget?id=1164181579191550055&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             <iframe src="https://discord.com/widget?id=1297496788449624125&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
-    </section>
 
     <button id="back-to-top">返回頂部</button>
+
+    <div style="position: fixed; bottom: 10px; left: 10px;">
+        <audio controls id="audio">
+            <source src="Rick Astley - Never Gonna Give You Up (Official Music Video) [dQw4w9WgXcQ].opus" type="audio/ogg">
+        </audio>
+    </div>
 
     <script>
         document.querySelectorAll('nav a').forEach(anchor => {
